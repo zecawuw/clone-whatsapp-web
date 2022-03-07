@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <title>WhatsApp web kk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <div class="web container">
+            <div class="contatos">
+
+                <div class="header-contatos">
+                    <div class="minha-img">
+                    </div><!--minha-img-->
+
+                    <div class="icon-contatos">
+                        <span class="material-icons">motion_photos_on</span>
+                        <span class="material-icons">chat</span>
+                        <span class="material-icons">more_vert</span>
+                    </div><!--icon-contatos-->
+
+                </div><!--header-contatos-->
+
+                <div class="pesquisa">
+                    <span onclick="funcaoPesquisa()" class="material-icons" id="search">search</span>
+                    <span onclick="funcaoButtonPesquisa()" id="arrow-back" class="material-icons arrow">arrow_back</span>
+                    <input onclick="funcaoPesquisa()" id="pesquisar" type="text" name="pesquisa" value="Pesquisar ou começar uma nova conversa">
+                </div><!--pesquisa-->
+
+                <div id="bom-dia" onclick="funcaoContatos(id)" class="contato">
+                    <div class="img-contato">
+                    </div><!--img-contato-->
+                    <div class="numero-contato">
+                        <h2>4002-8922</h2>
+                        <p></p>
+                    </div><!--numero-contato-->
+                </div><!--contato-->
+
+                <!-- <div id="matue" onclick="funcaoContatos(id)" class="contato-natue">
+                    <div class="img-contato-matue">
+                    </div><!--img-contato--
+                    <div class="numero-contato">
+                        <h2>matue</h2>
+                        <p></p>
+                    </div><!--numero-contato--
+                </div>contato -->
+
+            </div><!--contatos-->
+
+            <div id="mensagem" class="mensagem">
+                <div class="header-mensagem">
+                    <div class="contato-img">
+                    </div><!--contato-img-->
+                    <div class="contato-numero">
+                        <h2>4002-8922</h2>
+                        <p></p>
+                    </div><!--contato-numero-->
+                    <div class="opcoes">
+                        <span class="material-icons">search</span>
+                        <span class="material-icons">more_vert</span>
+                    </div><!--opcoes-->
+                </div><!--header-mensagem-->
+                <div class="escrever container">
+                    <input type="text" name="pesquisa" placeholder="Mensagem">
+                </div><!--escrever-->
+            </div><!--mensagem-->
+
+            <div class="pagina-inicial">
+
+            </div><!--pagina-inicial-->
+
+            
+        </div><!--web-->
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
