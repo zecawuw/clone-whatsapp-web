@@ -13,6 +13,7 @@ body{
 
 .container{
     max-width: 1860px;
+    /* max-width: 1361px; */
     margin: 0 auto;
 }
 
@@ -22,20 +23,25 @@ body{
     display: flex;
 }
 
+/* pagina inicial */
+
+#pagina-inicial{
+    width: 65%;
+    height: 100%;
+    background-image: url("https://pbs.twimg.com/media/FNrf4GcUYAABGR-?format=jpg&name=small");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* pagina inicial */
+
+/* contatos */
+
 .contatos{
     width: 35%;
     height: 100%;
     background: #111b21;
     border-right: 1px solid #505355b9;
-}
-
-.mensagem{
-    width: 65%;
-    height: 100%;
-    background-image: url('https://pbs.twimg.com/media/FNDO8NuXsAIEF1C?format=png&name=small');
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .header-contatos, .header-mensagem{
@@ -57,33 +63,6 @@ body{
     position: relative;
     top: 10px;
     left: 28px;
-}
-
-.escrever{
-    width:100%;
-    height: 85px;
-    background-color: #202c33;
-    
-}
-
-.escrever input{
-    width: 73%;
-    height: 57px;
-    margin: auto;
-    background-color: #303f47;
-    border-radius: 10px;
-    position:relative;
-    top: 50%;
-    left: 52%;
-    transform: translate(-50%,-80%);
-    margin-top: 15px;
-    margin-bottom: 5px;
-    border: 0;
-    color:#8696a0;
-    padding-left: 25px;
-    font-size: 18px;
-    outline: none;
-    
 }
 
 .pesquisa input{
@@ -126,36 +105,6 @@ body{
     font-size: 26px;
 }
 
-.contato{
-    /* margin-top: 30px; */
-    width: 97%;
-    height: 90px;
-    cursor: pointer;
-    /* background-color: red; */
-}
-
-.icon-contatos{
-    float: right;
-    position: relative;
-    top: -25px;
-    color: #aebac1;
-    width: 180px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.icon-contatos .material-icons{
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-
-.contato:hover{
-    background-color: #384952;
-    height: 90px;
-}
-
 .img-contato{
     width: 64px;
     height: 64px;
@@ -186,6 +135,37 @@ body{
     border-bottom: 1px solid #50535549;
 }
 
+.contato{
+    /* margin-top: 30px; */
+    width: 97%;
+    height: 90px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.icon-contatos{
+    float: right;
+    position: relative;
+    top: -25px;
+    color: #aebac1;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-contatos .material-icons{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+.contato:hover{
+    background-color: #384952;
+    height: 90px;
+}
+
+
 .contato-img{
     width: 56px;
     height: 56px;
@@ -201,6 +181,73 @@ body{
     margin-top: -40px;
     color: white;
     height: 70px;
+}
+
+/* contatos */
+
+/* mensagem */
+
+.mensagem{
+    width: 65%;
+    height: 100%;
+    background-image: url('https://pbs.twimg.com/media/FNDO8NuXsAIEF1C?format=png&name=small');
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.escrever{
+    width:100%;
+    height: 85px;
+    background-color: #202c33;
+    
+}
+
+.escrever input{
+    width: 80%;
+    height: 57px;
+    margin: auto;
+    background-color: #303f47;
+    border-radius: 10px;
+    position:relative;
+    top: 22%;
+    left: 40%;
+    transform: translate(-50%,-80%);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 0;
+    color:#8696a0;
+    padding-left: 25px;
+    font-size: 18px;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#mic-escrever{
+    color: #aebac1;
+    position:relative;
+    top: -70%;
+    right: 37px;
+    transform: translate(-50%,-50%);
+    float: right;
+    font-size: 36px!important;
+    cursor: pointer;
+}
+
+#escrever-icons{
+    color: #aebac1;
+    display: inline-block;
+    position:relative;
+    top: 55%;
+    right: -58px;
+    transform: translate(-50%,-50%);
+}
+
+#escrever-attach, #escrever-mood, .material-icons{
+    font-size: 30px !important;
 }
 
 .opcoes{
@@ -219,3 +266,81 @@ body{
     font-size: 30px!important;
     cursor: pointer;
 }
+
+#more-vert-p-2{
+    display: none;
+}
+
+.opcoes-more-vert{
+    width: 286px;
+    height: 286px;
+    background-color: #303f47;
+    float: right;
+    position: relative;
+    top: -26px;
+    left: 70px;
+    display: none;
+}
+
+.opcoes-more-vert ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    list-style-type: none;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.30); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.30);
+}
+
+.opcoes-more-vert-li{
+    color: #aebac1;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.opcoes-more-vert-li:hover{
+    background-color: #212e35;
+}
+
+/* mensagem */
+
+/* dados do contato */
+
+.header-dados-do-contato{
+    width: 100%;
+    height: 82px;
+    background-color: #303f47;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dados-do-contato-close{
+    padding-left: 30px;
+    color: #aebac1;
+}
+
+.dados-do-contato-close{
+    padding-left: 30px;
+    color: #aebac1;
+}
+
+.dados-do-contato{
+    width: 43%;
+    height: 100%;
+    background-color: #111b21;
+    display: none;
+}
+
+.dados-contato{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-dados-contato{
+
+}
+
+/* dados do contato */

@@ -13,6 +13,8 @@
         <div class="web container">
             <div class="contatos">
 
+                
+
                 <div class="header-contatos">
                     <div class="minha-img">
                     </div><!--minha-img-->
@@ -40,11 +42,11 @@
                     </div><!--numero-contato-->
                 </div><!--contato-->
 
-                <!-- <div id="matue" onclick="funcaoContatos(id)" class="contato-natue">
-                    <div class="img-contato-matue">
+                <!-- <div id="bom-dia" onclick="funcaoContatos(id)" class="contato">
+                    <div class="img-contato">
                     </div><!--img-contato--
                     <div class="numero-contato">
-                        <h2>matue</h2>
+                        <h2>4002-8922</h2>
                         <p></p>
                     </div><!--numero-contato--
                 </div>contato -->
@@ -61,19 +63,56 @@
                     </div><!--contato-numero-->
                     <div class="opcoes">
                         <span class="material-icons">search</span>
-                        <span class="material-icons">more_vert</span>
+                        <span id="more-vert-p-1" onclick="funcaoOpcoesMoreVert1()" class="material-icons ">more_vert</span>
+                        <span id="more-vert-p-2" onclick="funcaoOpcoesMoreVert2()" class="material-icons ">more_vert</span>
                     </div><!--opcoes-->
+                    <div id="opcoes-more-vert" class="opcoes-more-vert">
+                        <ul>
+                            <li onclick="dadosContatoCloseAbri()" class="opcoes-more-vert-li">Dados do contato</li>
+                            <li class="opcoes-more-vert-li">Selecionar mensagens</li>
+                            <li onclick="fecharConversa()" class="opcoes-more-vert-li">Fechar conversa</li>
+                            <li class="opcoes-more-vert-li">Silencar notificações</li>
+                            <li class="opcoes-more-vert-li">Limpar mensagens</li>
+                            <li class="opcoes-more-vert-li">Apagar conversa</li>
+                        </ul>
+                    </div><!--opcoes-more-vert-->
                 </div><!--header-mensagem-->
                 <div class="escrever container">
+                    <div id="escrever-icons">
+                        <span id="escrever-mood" class="material-icons">mood</span>
+                        <span id="escrever-attach" class="material-icons">attach_file</span>
+                    </div><!--escrever-icons-->
                     <input type="text" name="pesquisa" placeholder="Mensagem">
+                    <span id="mic-escrever" class="material-icons">mic</span>
                 </div><!--escrever-->
             </div><!--mensagem-->
 
-            <div class="pagina-inicial">
-
+            <div id="pagina-inicial"> 
             </div><!--pagina-inicial-->
 
-            
+            <div id="dados-do-contato" class="dados-do-contato">
+                <div class="header-dados-do-contato">
+                    <span onclick="dadosContatoCloseFechar()" class="material-icons dados-do-contato-close">close</span>
+                    <h3 class="dados-do-contato-close">Dados do contato</h3>
+                </div><!--header-dados-do-contato-->
+                <div class="dados-contato">
+                    <div class="img-dados-contato">
+                    </div><!--img-dados-contato-->
+                    <p>4002-8922</p>
+                    <div class="recado-contato">
+                    </div><!--recado-contato-->
+                    <div class="arquivos-de-midia">
+                    </div><!--arquivos-de-midia-->
+                    <div class="mensagens-favoritas-dados">
+                    </div><!--mensagens-favoritas-dados-->
+                    <div class="mais-dados-contato">
+                    </div><!--mais-dados-contato-->
+                    <div class="apagar-dados-pessoais">
+                    </div><!--apagar-dados-pessoais-->
+
+                </div><!--dados-contato-->
+            </div><!--dados-do-contato-->
+
         </div><!--web-->
 
 
